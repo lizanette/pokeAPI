@@ -15,8 +15,6 @@ const next = document.getElementById("next");
 let from = 1;
 let to = 9;
 
-console.log(window.location.pathname)
-
 prev.addEventListener('click', () => {
     if (from > 1) {
         from -= 10; // Getting the 10 previous pokemons
@@ -95,5 +93,3 @@ const removeData = (row) => {
         row.removeChild(row.firstChild);
     }
 };
-
-

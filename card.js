@@ -10,6 +10,7 @@ class Pokemon {
     }
 }
 
+// Getting pokemon's id:
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get('id')
@@ -23,7 +24,6 @@ const getPokemon = async (id) => {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
         const data = await res.json()
         setInfo(data);
-            console.log(data)
     } catch (error) {
         console.log(error)
     }
