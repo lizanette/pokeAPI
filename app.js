@@ -82,6 +82,7 @@ const pokemonCard = (pokemon) => {
 
     row.appendChild(card)
 
+    // When a pokemon card is clicked, we send its id to the next page:
     card.addEventListener('click', () => {
         window.location.href = 'card.html?id=' + pokemon.id;  
     })
